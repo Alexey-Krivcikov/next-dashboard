@@ -2,9 +2,10 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack & npm run lint:watch",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:watch": "esw --watch --ext .js,.jsx,.ts,.tsx src/"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -34,6 +35,7 @@
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "eslint-watch": "^8.0.0",
     "prettier": "^3.8.3"
   },
   "pnpm": {
