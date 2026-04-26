@@ -1,8 +1,26 @@
 {
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "no-console": "error",
     "no-debugger": "error",
     "no-unused-vars": "off",
+
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -11,7 +29,9 @@
         "caughtErrorsIgnorePattern": "^_"
       }
     ],
+
     "@typescript-eslint/no-explicit-any": "error",
+
     "@typescript-eslint/explicit-function-return-type": [
       "warn",
       {
@@ -19,14 +39,18 @@
         "allowTypedFunctionExpressions": true
       }
     ],
+
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/no-empty-function": "error",
     "@typescript-eslint/no-inferrable-types": "warn",
+
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/display-name": "error",
+
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
