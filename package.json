@@ -2,10 +2,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack & npm run lint:watch",
+    "dev": "next dev --turbopack",
     "start": "next start",
-    "lint": "next lint",
-    "lint:watch": "esw --watch --ext .js,.jsx,.ts,.tsx src/"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -33,9 +32,10 @@
     "@typescript-eslint/eslint-plugin": "^8.58.2",
     "@typescript-eslint/parser": "^8.58.2",
     "eslint": "^8.57.1",
-    "eslint-config-next": "^16.2.4",
+    "eslint-config-next": "^15.5.15",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-watch": "^8.0.0",
     "prettier": "^3.8.3"
   },
